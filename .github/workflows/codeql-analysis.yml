@@ -1,6 +1,7 @@
 name: "CodeQL"
 
 on:
+  workflow_dispatch:
   push:
     branches:
     - master
@@ -11,8 +12,6 @@ on:
     - master
     - "1.8"
     - "2.0"
-  schedule:
-  - cron: '00 09 * * 3'
 
 jobs:
   analyze:
